@@ -1,0 +1,142 @@
+[
+  {
+    "player_image": "https://i.ibb.co/W4MLxNtw/1696748634550-Shakib-Al-Hasan.jpg",
+    "player_name": "Shakib Al Hasan",
+    "player_country": "Bangladesh",
+    "player_role": "All-rounder",
+    "rating": 9.8,
+    "batting_style": "Left-hand bat",
+    "bolling_style": "Slow left-arm orthodox",
+    "price": "$150,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/9HZVsKSp/52c775579b5d418c88a1176d2e0a0d01.png",
+    "player_name": "Tamim Iqbal",
+    "player_country": "Bangladesh",
+    "player_role": "Batsman",
+    "rating": 9.5,
+    "batting_style": "Left-hand bat",
+    "bolling_style": "None",
+    "price": "$130,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/3ycZYnjp/Andre-Russell-Jamaica.jpg",
+    "player_name": "Andre Russell",
+    "player_country": "West Indies",
+    "player_role": "All-rounder",
+    "rating": 9.7,
+    "batting_style": "Right-hand bat",
+    "bolling_style": "Right-arm fast",
+    "price": "$180,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/r2NR3h52/FKa3-Fz-Rac-AILb-H2.jpg",
+    "player_name": "Faf du Plessis",
+    "player_country": "South Africa",
+    "player_role": "Batsman",
+    "rating": 9.4,
+    "batting_style": "Right-hand bat",
+    "bolling_style": "Leg break",
+    "price": "$140,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/9kK4BcLN/images.webp",
+    "player_name": "Mushfiqur Rahim",
+    "player_country": "Bangladesh",
+    "player_role": "Wicketkeeper Batsman",
+    "rating": 9.4,
+    "batting_style": "Right-hand bat",
+    "bolling_style": "None",
+    "price": "$125,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/8ggz0NZ5/images.jpg",
+    "player_name": "Mahmudullah Riyad",
+    "player_country": "Bangladesh",
+    "player_role": "All-rounder",
+    "rating": 9.2,
+    "batting_style": "Right-hand bat",
+    "bolling_style": "Off break",
+    "price": "$110,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/DDWWSnGN/images-1.jpg",
+    "player_name": "Mustafizur Rahman",
+    "player_country": "Bangladesh",
+    "player_role": "Bowler",
+    "rating": 9.3,
+    "batting_style": "Left-hand bat",
+    "bolling_style": "Left-arm fast-medium",
+    "price": "$120,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/fVSv0g4g/Babar-Azam-1.jpg",
+    "player_name": "Babar Azam",
+    "player_country": "Pakistan",
+    "player_role": "Batsman",
+    "rating": 9.6,
+    "batting_style": "Right-hand bat",
+    "bolling_style": "None",
+    "price": "$170,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/VcS1Zz02/Rashid.jpg",
+    "player_name": "Rashid Khan",
+    "player_country": "Afghanistan",
+    "player_role": "Bowler",
+    "rating": 9.8,
+    "batting_style": "Right-hand bat",
+    "bolling_style": "Right-arm leg break",
+    "price": "$200,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/3myyjhSR/1608690823-5fe2ac8712921-david-miller.jpg",
+    "player_name": "David Miller",
+    "player_country": "South Africa",
+    "player_role": "Batsman",
+    "rating": 9.1,
+    "batting_style": "Left-hand bat",
+    "bolling_style": "None",
+    "price": "$135,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/whq7k1hL/Sunil-Narine.jpg",
+    "player_name": "Sunil Narine",
+    "player_country": "West Indies",
+    "player_role": "All-rounder",
+    "rating": 9.3,
+    "batting_style": "Left-hand bat",
+    "bolling_style": "Right-arm off break",
+    "price": "$160,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/RkCTvPsp/images-2.jpg",
+    "player_name": "Mohammad Nabi",
+    "player_country": "Afghanistan",
+    "player_role": "All-rounder",
+    "rating": 9.4,
+    "batting_style": "Right-hand bat",
+    "bolling_style": "Right-arm off break",
+    "price": "$150,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/LXVGWrfV/k.jpg",
+    "player_name": "Litton Das",
+    "player_country": "Bangladesh",
+    "player_role": "Wicketkeeper Batsman",
+    "rating": 9.2,
+    "batting_style": "Right-hand bat",
+    "bolling_style": "None",
+    "price": "$115,000"
+  },
+  {
+    "player_image": "https://i.ibb.co/JRV9wbFF/Quinton-de-Kock.png",
+    "player_name": "Quinton de Kock",
+    "player_country": "South Africa",
+    "player_role": "Wicketkeeper Batsman",
+    "rating": 9.5,
+    "batting_style": "Left-hand bat",
+    "bolling_style": "None",
+    "price": "$170,000"
+  }
+]
