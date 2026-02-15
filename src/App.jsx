@@ -8,13 +8,15 @@ const fatchPlayers = async() =>{
   return res.json()
 }
 
+const playersPromes = fatchPlayers()
 const App = () => {
   const [toogle, setToogle] = useState (true)
+  const [availableBalance , setAvailableBalance] = useState (600000)
 
-  const playersPromes = fatchPlayers()
+  
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar availableBalance={availableBalance}></Navbar>
       <div className=" flex justify-between items-center max-w-[1200px] mx-auto mt-4">
         <h1 className=" text-2xl font-bold">Available Players</h1>
         <div className={`text-lg font-bold `}>
@@ -37,7 +39,7 @@ const App = () => {
         </div>
         
         }>
-       <AvailablePlayers playersPromes={playersPromes}></AvailablePlayers> 
+       <AvailablePlayers availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromes={playersPromes}></AvailablePlayers> 
       </Suspense> : <SelectedPlayers></SelectedPlayers>
       }
       
