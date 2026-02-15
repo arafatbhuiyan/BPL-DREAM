@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar max-w-[1200px] mx-auto">
+      <div className="navbar max-w-[1200px] mx-auto bg-gray-100">
         <div className="flex-1">
           <img src="https://i.ibb.co/kg7wXzK5/logo.png" alt="" />
         </div>

@@ -13,7 +13,7 @@ const AvailablePlayers = ({ playersPromes }) => {
         <div className="card bg-base-100 shadow-sm p-5">
           <figure>
             <img
-            className=" w-full h-[300px] object-cover"
+            className=" w-full h-[300px] rounded-2xl object-cover"
               src={player.player_image}
               alt="Shoes"
             />
