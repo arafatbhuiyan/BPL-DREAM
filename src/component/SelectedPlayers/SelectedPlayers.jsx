@@ -1,13 +1,13 @@
 import React from 'react';
 import SelectedCard from '../SelectedCard/SelectedCard';
 
-const SelectedPlayers = ({parsesPlayer}) => {
+const SelectedPlayers = ({parsesPlayer, removePlay}) => {
     console.log(parsesPlayer);
     
     return (
         <div>
             {
-                parsesPlayer.map( player => <SelectedCard player={player}></SelectedCard>)
+                parsesPlayer.map( player => <SelectedCard removePlay={removePlay} player={player}></SelectedCard>)
             }
             
         </div>

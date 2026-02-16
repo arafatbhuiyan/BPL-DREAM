@@ -1,7 +1,11 @@
 import React from 'react';
 import { MdDelete } from 'react-icons/md';
 
-const SelectedCard = ({player}) => {
+const SelectedCard = ({player,removePlay}) => {
+
+    const hendelRemove =()=>{
+        removePlay(player)
+    }
  
     return (
         <div className='max-w-[1200px] mx-auto'>
@@ -15,7 +19,9 @@ const SelectedCard = ({player}) => {
                         <p>{player.player_role}</p>
                     </div>
                 </div>
-                <div><MdDelete className='h-8 w-8 text-red-400 mr-6'/></div>
+                <div onClick={hendelRemove}>
+                    <MdDelete className='h-8 w-8 text-red-400 mr-6'/>
+                </div>
             </div>
         </div>
     );

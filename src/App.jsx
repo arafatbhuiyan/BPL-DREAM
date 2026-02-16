@@ -14,7 +14,12 @@ const App = () => {
   const [availableBalance, setAvailableBalance] = useState(700000);
   const [parsesPlayer , setParsesPlayer]= useState([])
  
-  
+  const removePlay =(p)=>{
+    const filteredData = parsesPlayer.filter(ply=> ply.player_name !== p.player_name)
+    console.log(filteredData);
+    setParsesPlayer(filteredData)
+    setAvailableBalance(availableBalance + parseInt(p.price.split(",").join("").split("$").join("")))
+  }
   
 
   
@@ -45,7 +50,7 @@ const App = () => {
         
         }>
        <AvailablePlayers parsesPlayer={parsesPlayer} setParsesPlayer={setParsesPlayer} availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromes={playersPromes}></AvailablePlayers> 
-      </Suspense> : <SelectedPlayers parsesPlayer={parsesPlayer}></SelectedPlayers>
+      </Suspense> : <SelectedPlayers removePlay={removePlay} parsesPlayer={parsesPlayer}></SelectedPlayers>
       }
       
       
