@@ -11,9 +11,9 @@ const fatchPlayers = async() =>{
 const playersPromes = fatchPlayers()
 const App = () => {
   const [toogle, setToogle] = useState (true)
-  const [availableBalance, setAvailableBalance] = useState(60000000);
+  const [availableBalance, setAvailableBalance] = useState(700000);
   const [parsesPlayer , setParsesPlayer]= useState([])
-  
+ 
   
   
 
@@ -22,14 +22,15 @@ const App = () => {
     <div>
       <Navbar availableBalance={availableBalance}></Navbar>
       <div className=" flex justify-between items-center max-w-[1200px] mx-auto mt-4">
-        <h1 className=" text-2xl font-bold">Available Players</h1>
+        <h1 className=" text-2xl font-bold">{toogle===true? "Available Players" : `Selected Player (${parsesPlayer.length}/6)`}</h1>
         <div className={`text-lg font-bold `}>
           <button
           onClick={()=> setToogle(true)}
           className={` border px-5 py-2 rounded-l-xl text-gray-500 border-r-0 ${toogle===true ? "bg-yellow-400" : " transform"}`}>Available</button>
           <button
           onClick={()=> setToogle(false)}
-          className={` border px-5 py-2 rounded-r-xl text-gray-500 border-l-0 ${toogle===false ? "bg-yellow-400" : " transform"}`}>Selected (0)</button>
+          className={` border px-5 py-2 rounded-r-xl text-gray-500 border-l-0 ${toogle===false ? "bg-yellow-400" : " transform"}`}>Selected ({parsesPlayer.length})
+</button>
         </div>
 
       </div>

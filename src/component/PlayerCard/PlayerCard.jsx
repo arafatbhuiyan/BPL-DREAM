@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsFillFlagFill } from "react-icons/bs";
 import Swal from "sweetalert2";
 
-const PlayerCard = ({ player, setAvailableBalance, availableBalance, parsesPlaye,setParsesPlayer }) => {
+const PlayerCard = ({ player, setAvailableBalance, availableBalance, parsesPlayer , setParsesPlayer }) => {
   const [isSelected, setIsSelected] = useState(false);
 
   const hendelSelected = (playerData) => {
@@ -10,16 +10,14 @@ const PlayerCard = ({ player, setAvailableBalance, availableBalance, parsesPlaye
       playerData.price.split(",").join("").split("$").join(""),
     );
     if (availableBalance < playerPrice) {
-      Swal.fire({
-        icon: "error",
-        title: "Insufficient Balance",
-        text: "You do not have enough money.",
-        confirmButtonText: "OK",
-      });
+      alert("Not Enough Coin")
+      return
     }
     setIsSelected(true);
     setAvailableBalance(availableBalance - playerPrice);
-    setParsesPlayer([...parsesPlaye,playerData ])
+    setParsesPlayer([...parsesPlayer,playerData ])
+    console.log(parsesPlayer);
+    
   };
   return (
     <div>
