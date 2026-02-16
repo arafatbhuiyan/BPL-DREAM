@@ -11,7 +11,11 @@ const fatchPlayers = async() =>{
 const playersPromes = fatchPlayers()
 const App = () => {
   const [toogle, setToogle] = useState (true)
-  const [availableBalance , setAvailableBalance] = useState (600000)
+  const [availableBalance, setAvailableBalance] = useState(60000000);
+  const [parsesPlayer , setParsesPlayer]= useState([])
+  
+  
+  
 
   
   return (
@@ -39,8 +43,8 @@ const App = () => {
         </div>
         
         }>
-       <AvailablePlayers availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromes={playersPromes}></AvailablePlayers> 
-      </Suspense> : <SelectedPlayers></SelectedPlayers>
+       <AvailablePlayers parsesPlayer={parsesPlayer} setParsesPlayer={setParsesPlayer} availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromes={playersPromes}></AvailablePlayers> 
+      </Suspense> : <SelectedPlayers parsesPlayer={parsesPlayer}></SelectedPlayers>
       }
       
       

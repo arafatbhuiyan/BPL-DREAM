@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsFillFlagFill } from "react-icons/bs";
 import Swal from "sweetalert2";
 
-const PlayerCard = ({ player, setAvailableBalance, availableBalance }) => {
+const PlayerCard = ({ player, setAvailableBalance, availableBalance, parsesPlaye,setParsesPlayer }) => {
   const [isSelected, setIsSelected] = useState(false);
 
   const hendelSelected = (playerData) => {
@@ -19,6 +19,7 @@ const PlayerCard = ({ player, setAvailableBalance, availableBalance }) => {
     }
     setIsSelected(true);
     setAvailableBalance(availableBalance - playerPrice);
+    setParsesPlayer([...parsesPlaye,playerData ])
   };
   return (
     <div>

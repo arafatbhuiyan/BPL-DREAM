@@ -3,7 +3,7 @@ import { use } from "react";
 
 import PlayerCard from "../PlayerCard/PlayerCard";
 
-const AvailablePlayers = ({ playersPromes,setAvailableBalance,availableBalance }) => {
+const AvailablePlayers = ({ playersPromes,setAvailableBalance,availableBalance, parsesPlaye,setParsesPlayer }) => {
   const playersData = use(playersPromes);
   console.log(playersData);
 
