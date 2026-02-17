@@ -1,6 +1,5 @@
 import React from "react";
 import { use } from "react";
-
 import PlayerCard from "../PlayerCard/PlayerCard";
 
 const AvailablePlayers = ({playersPromes, setAvailableBalance, availableBalance, parsesPlayer, setParsesPlayer,})=>{  
@@ -14,7 +13,10 @@ const AvailablePlayers = ({playersPromes, setAvailableBalance, availableBalance,
             
         />
       ))}
+
+      
     </div>
+    
   );
 };
 

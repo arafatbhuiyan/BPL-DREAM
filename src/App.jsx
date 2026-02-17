@@ -2,6 +2,7 @@ import React, { Suspense, useState } from "react";
 import Navbar from "./component/Navbar/Navbar";
 import AvailablePlayers from "./component/AvailablePlayers/AvailablePlayers";
 import SelectedPlayers from "./component/SelectedPlayers/SelectedPlayers";
+import { ToastContainer } from 'react-toastify';
 
 const fatchPlayers = async() =>{
   const res = await fetch("/players.json")
@@ -50,12 +51,17 @@ const App = () => {
         
         }>
        <AvailablePlayers parsesPlayer={parsesPlayer} setParsesPlayer={setParsesPlayer} availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromes={playersPromes}></AvailablePlayers> 
-      </Suspense> : <SelectedPlayers removePlay={removePlay} parsesPlayer={parsesPlayer}></SelectedPlayers>
+      </Suspense> : <SelectedPlayers removePlay={removePlay} parsesPlayer={parsesPlayer} toogle={toogle} setToogle={setToogle} ></SelectedPlayers>
       }
+
+
       
-      
+      <ToastContainer />
       
     </div>
+    
+
+
     
     
   );

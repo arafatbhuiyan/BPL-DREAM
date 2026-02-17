@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BsFillFlagFill } from "react-icons/bs";
+import { toast } from "react-toastify";
 import Swal from "sweetalert2";
 
 const PlayerCard = ({ player, setAvailableBalance, availableBalance, parsesPlayer , setParsesPlayer }) => {
@@ -10,8 +11,11 @@ const PlayerCard = ({ player, setAvailableBalance, availableBalance, parsesPlaye
       playerData.price.split(",").join("").split("$").join(""),
     );
     if (availableBalance < playerPrice) {
-      alert("Not Enough Coin")
+      toast("Not Enough Coin")
       return
+    }
+    if(parsesPlayer.length === 6){
+      toast(" 6 player already selected")
     }
     setIsSelected(true);
     setAvailableBalance(availableBalance - playerPrice);
